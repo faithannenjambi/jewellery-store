@@ -1,0 +1,329 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.section1
+{
+    background:url("Assets/background.jpg") #4e4c4c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 70vh;
+    width: 100%;
+    padding-top: 30px;
+}
+
+/* Nav Bar*/
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top: 0;
+}
+
+.logo-container
+{
+    width: 120px;
+}
+
+.navigations
+{
+    display: flex;
+    gap: 30px;
+}
+
+.navigations a, .mobile-menu-navigations a
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.icons
+{
+    display: flex;
+    gap: 20px;
+}
+.icons a
+{
+    width: 35px;
+    height: 35px;
+}
+
+.catch-phrase
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+    flex-direction: column;
+}
+
+.header-text
+{
+    font-size: 4.2rem;
+    color: #ffffff;
+    padding-bottom: 50px;
+    font-family: "Raleway", sans-serif;
+}
+
+.header-text span
+{
+    color: #9d4edd;
+}
+
+.btn
+{
+    background-color: #e0aaff;
+    text-decoration: none;
+    color: #000000;
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn:hover
+{
+    transform: translateY(-5px);
+}
+
+.mobile-menu
+{
+    width: 35px;
+    height: 35px;
+}
+
+.mobile-menu img
+{
+    width: 100%;
+}
+
+.hide-mobile-menu
+{
+    display: none;
+}
+
+.mobile-menu-navigations
+{
+    position: absolute;
+    right: 0;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 20px;
+    gap: 5px;
+    backdrop-filter: blur(15px);
+}
+
+.hide-mobile-menu-navigations
+{
+    display: none;
+}
+/*Section 2*/
+
+.section2
+{
+    display: flex;
+    gap: 30px;
+    background-color: #e0aaff;
+    padding: 50px;
+}
+
+.section2-img
+{
+    flex-basis: 50%;
+}
+
+.section2-img img
+{
+    width: 600px;
+    float: right;
+    border-radius: 15px;
+}
+
+.section2-content
+{
+    flex-basis: 35%;
+}
+
+.section2-content p
+{
+    font-size: 1.2rem;
+    line-height: 27.2px;
+    margin-bottom: 50px;
+}
+
+.shop-now
+{
+    background-color: #000000;
+    color: #ffffff;
+    animation: pulse 3.0s infinite;
+}
+
+@keyframes pulse
+{
+    from
+    {
+        box-shadow: 0 0 0 0 rgba(14, 13, 13, 0.85);
+    }
+    to
+    {
+        box-shadow: 0 0 0 30px rgba(15, 15, 15, 0);
+    }
+}
+
+
+/*Footer*/
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #000000;
+    padding: 20px 0;
+    color: #ffffff;
+    width: 100%;
+}
+
+.footer-left img
+{
+    width: 25px;
+    height: 25px;
+}
+
+.footer-icons
+{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-text
+{
+    font-size: .8rem;
+    padding: 10px 0;
+}
+
+.footer-right
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.footer-right a
+{
+    text-decoration: none;
+    color: #9d4edd;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer-right a:hover
+{
+    color: #ffffff;
+}
+
+/*Responsive Design*/
+
+@media only screen and (max-width: 600px) 
+{
+    .hide-mobile-menu
+    {
+        display: block;
+    }
+
+    .navigations
+    {
+        display: none;
+    }
+
+    .icons
+    {
+        display: none;
+    }
+
+    .section2 
+    {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .section2-img 
+    {
+        flex-basis: 100%; 
+    }
+
+    .section2-img img
+    {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .header-text 
+    {
+        font-size: 3.2rem;
+    }
+
+    .btn 
+    {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+
+    .section2-content p 
+    {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    footer 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right 
+    {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) 
+{
+
+    .logo-container
+    {
+        width: 100px;
+    }
+    
+    .navigations a
+    {
+        font-size: 1rem;
+    }
+    .catch-phrase
+    {
+        padding: 150px 0;
+    }
+    .header-text 
+    {
+        font-size: 3.2rem;
+    }
+
+    .section2
+    {
+        flex-direction: column;
+    }
+}
