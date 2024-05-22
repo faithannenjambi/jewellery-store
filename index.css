@@ -24,7 +24,7 @@ nav
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 30px;
+    padding: 10px 30px;
     backdrop-filter: blur(50px);
     position: fixed;
     top: 0;
@@ -92,10 +92,7 @@ nav
     font-weight: 600;
 }
 
-.btn:hover
-{
-    transform: translateY(-5px);
-}
+
 
 .mobile-menu
 {
@@ -123,7 +120,9 @@ nav
     text-align: right;
     padding: 20px;
     gap: 5px;
-    backdrop-filter: blur(15px);
+    background-color: #000000;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .hide-mobile-menu-navigations
