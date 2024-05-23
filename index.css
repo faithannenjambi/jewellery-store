@@ -24,10 +24,15 @@ nav
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 30px;
-    backdrop-filter: blur(50px);
+    padding: 5px 30px;
+    background-color: #000000a9;
     position: fixed;
     top: 0;
+}
+
+.nav-background
+{
+    background-color: #000000;
 }
 
 .logo-container
@@ -45,7 +50,7 @@ nav
 {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 .icons
@@ -114,15 +119,14 @@ nav
 {
     position: absolute;
     right: 0;
-    top: 70px;
+    top: 60px;
     display: flex;
     flex-direction: column;
     text-align: right;
     padding: 20px;
-    gap: 5px;
-    background-color: #000000;
+    gap: 10px;
+    background-color: #000000a9;
     border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 .hide-mobile-menu-navigations
