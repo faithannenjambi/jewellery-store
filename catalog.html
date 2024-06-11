@@ -60,12 +60,18 @@
         <div class="catalog-navbar">
             <img src="Assets/Icons/icons8-love-heart-50.png" alt="wishlist icon">
             <img src="Assets/Icons/icons8-filter-50.png" alt="filter icon">
-            <img src="Assets/Icons/icons8-sort-64.png" alt="sort icon">
+
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="earrings">Earrings</option>
+                <option value="necklaces">Necklaces</option>
+                <option value="chains">Chains</option>
+            </select>
         </div>
 
         <div class="products">
 
-            <div class="product-card">
+            <div class="product-card" data-category="earrings">
 
                 <div class="product-image">
                     <div>
@@ -88,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="chains">
 
                 <div class="product-image">
                     <div>
@@ -111,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="necklaces">
 
                 <div class="product-image">
                     <div>
@@ -134,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="earrings">
 
                 <div class="product-image">
                     <div>
@@ -157,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="necklaces">
 
                 <div class="product-image">
                     <div>
@@ -180,7 +186,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="chains">
 
                 <div class="product-image">
                     <div>
@@ -203,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="earrings">
 
                 <div class="product-image">
                     <div>
@@ -226,7 +232,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="necklaces">
 
                 <div class="product-image">
                     <div>
@@ -249,7 +255,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="chains">
 
                 <div class="product-image">
                     <div>
@@ -271,7 +277,8 @@
                     <img src="Assets/Icons/heart-outlined.png" alt="wishlist icon">
                 </div>
             </div>
-            <div class="product-card">
+            
+            <div class="product-card" data-category="necklaces">
 
                 <div class="product-image">
                     <div>

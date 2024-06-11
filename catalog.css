@@ -43,6 +43,13 @@ body
     height: 25px;
 }
 
+.catalog-navbar select
+{
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 8px;
+}
+
 .products
 {
     display: grid;
@@ -56,6 +63,7 @@ body
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
 }
 
 .product-image
@@ -90,8 +98,8 @@ body
 
 .product-actions img
 {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 .product-actions
@@ -104,7 +112,7 @@ body
 .cart-btn
 {
     flex: 2;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: #000000;
     color: #ffffff;
     border: 0;

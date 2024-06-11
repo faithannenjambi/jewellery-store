@@ -34,3 +34,29 @@ function hide_menu()
 {
     menu_navigations.classList.add("hide-mobile-menu-navigations");
 }
+
+
+
+function filter_products(category)
+{
+    const products = document.querySelectorAll('.product-card');
+
+    products.forEach(product =>
+        {
+            if(category === 'all' || product.getAttribute('data-category') === category)
+                {
+                    product.style.display='grid';
+                }
+            else
+            {
+                product.style.display='none';
+            }
+        }
+    )
+}
+
+const filter_selection = document.querySelector('#filter');
+filter_selection.addEventListener('change', () => 
+{
+    filter_products(filter_selection.value);
+});
